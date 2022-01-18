@@ -4,7 +4,7 @@
 COUNTER=1
 while [ $COUNTER -lt 101 ]
 do
-    if [ $((COUNTER%5 && COUNTER%3)) = 0 ]
+    if [ $((COUNTER%15)) = 0 ]
     then
         echo "FizzBuzz"
     elif [ $((COUNTER%3)) = 0 ]
